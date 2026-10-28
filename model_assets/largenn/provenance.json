@@ -1,0 +1,28 @@
+{
+  "research_commit": "65f2cf6b6bc366da8d149e38e0e04c1d40127145",
+  "sources": {
+    "tinyaf/models/projection/base_model.py": "ad037162950682845661c6d9679bdc5ee052e05704437b54843367e125ad15d5",
+    "tinyaf/models/models.py": "f568ff21d9f520159689e2cc9792b2e03cf72dace30be21c152ac781d2f0e431",
+    "tinyaf/pipeline.py": "48a65f6950283e17934e1151466121e18c2813e6cc5b03a8acd468ae8cf2eff8",
+    "tinyaf/preprocess/rpeaks.py": "3895bfd01dc0da64bfb08137044723ec964c2088d6492630a8ef2c162d42951d",
+    "tinyaf/preprocess/derive_flat.py": "f8d68ddabd632029f5544297971ccf53c7dd62957c227cfeea2b1a84646ea325",
+    "tinyaf/data/hr_aux.py": "fa709ee03971bc4c1dd0c0409fface5b80109a33c6bc05ec58ecbeb4d5acfe66",
+    "tinyaf/operating_point.json": "1fe0fc28d8bf72135a8c33daea617ca711405dcba3ce1141cb558db9ff56b874",
+    "tinyaf/tools/operating_point.py": "8ac3741c743dcfb92218d27165e3dedf56bcf691ef5236cd90fb37612329d63d",
+    "tinyaf/tools/score_val.py": "eefdfdaa8149fec78ef15b5be96e15418193d70b22d9d88a170f9552f0ed0acb",
+    "tinyaf/models/projection/resnet.py": "9cef18ac5951ddee11c1b5dcdb1f6952dae9e7754275d1fab3f2fbfe939eb02b"
+  },
+  "models": {
+    "LARGENN": {
+      "source": "/storage2/zberger/tinyaf/models_cmp_large_rs4_lr0.0001_l20.0001/BWH/FLTD_NC_HP_RS4_RESNET_18_CNN/none/target_hz_100/upsample_0.0/l1_0.0_l2_0.0001_lr_0.0001_batch_256/AFIB_model_FLTD_NC_HP_RS4_RESNET_18_CNN_cal_none_label_BOTH_hz_100_ups_0.0_l1_0.0_l2_0.0001_lr_0.0001_batch_256.pth",
+      "research_root": "models_cmp_large_rs4_lr0.0001_l20.0001",
+      "sha256": "3278c3a9e57d56d0aeb3d3ed959fe3392eb750f596b1e49cec48628111cc13cd",
+      "threshold": 0.6911819363466792
+    }
+  },
+  "threshold_selection": {
+    "report": "model_assets/largenn/threshold_selection.json",
+    "split": "BWH-validation",
+    "target_sensitivity": 0.85
+  }
+}

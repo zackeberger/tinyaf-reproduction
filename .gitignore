@@ -1,0 +1,43 @@
+# Python cache files
+*.pyc
+__pycache__/
+
+# Local environment/config files
+.tinyaf_env
+
+# Generated results and outputs
+results/*
+/fig/outputs/
+compile/
+logs/
+
+# Local Codex/agent instructions and run artifacts
+agent.md
+/EXECUTION_LOG.md
+
+# Local external C sources for host validation
+external_src/
+
+# Local data directories
+example_data/*
+shdb-af
+physionet.org
+afib_data
+data/*
+
+# Keep the bundled Quanta-format examples.
+!data/quanta-examples/
+!data/quanta-examples/**/
+!data/quanta-examples/**/*.txt
+!data/simulated-afib-examples/
+!data/simulated-afib-examples/**/
+!data/simulated-afib-examples/**/*.txt
+
+# Compiled C binaries / shared libraries
+tinyaf_caller
+c/predict_csv
+*.so
+*.o
+*.out
+*.a
+*.dylib

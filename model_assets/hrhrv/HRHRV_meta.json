@@ -1,0 +1,20 @@
+{
+  "threshold": 0.09417233156767857,
+  "threshold_target_sensitivity": 0.85,
+  "calibration": "none",
+  "model": "NORM_HR+HRV_FLTD_NC_HP_LINEAR",
+  "data": "BWH",
+  "val_loss": 0.2530239191865945,
+  "val_auroc": 0.8659992733780555,
+  "val_auprc": 0.3951960328653583,
+  "lr": 0.001,
+  "l1": 0.0,
+  "l2": 0.0,
+  "upsample": 0.0,
+  "batch_size": 256,
+  "epochs_max": 100,
+  "patience": 10,
+  "original_training_threshold": 0.09417232871055603,
+  "threshold_selection": "model_assets/hrhrv/threshold_selection.json",
+  "input_kind": "hrhrv"
+}

@@ -1,0 +1,25 @@
+{
+  "split": "BWH-validation",
+  "target_sensitivity": 0.85,
+  "criterion": "Highest observed probability threshold with sensitivity >= 0.85; probability >= threshold is positive.",
+  "probability": "scipy.special.expit of float32 logits promoted to float64",
+  "models": {
+    "HRHRV": {
+      "threshold": 0.09417233156767857,
+      "original_training_threshold": 0.09417232871055603,
+      "validation_cache": "/home/zberger/tinyaf-research/logs/comparators/npz_val/models_cmp_hrhrv_lr0.001_l20.0.npz",
+      "cache_sha256": "dc6390d8adbdd64848f7fd7e73c132f267ef03ae423557ee7d3afc2f067fe10f",
+      "n": 252303,
+      "f1": 0.4151311798604792,
+      "fn": 3864,
+      "fp": 57842,
+      "mcc": 0.38730000811616344,
+      "npv": 0.9776080481218344,
+      "ppv": 0.2746266036292497,
+      "sens": 0.8500174669099095,
+      "spec": 0.7446720226008652,
+      "tn": 168698,
+      "tp": 21899
+    }
+  }
+}

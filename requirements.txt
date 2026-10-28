@@ -1,0 +1,14 @@
+numpy==2.2.3
+scipy==1.16.0
+torch==2.7.1
+neurokit2==0.2.12
+pandas==2.2.3
+wfdb==4.3.0
+h5py==3.12.1
+pyarrow==22.0.0
+scikit-learn==1.7.0
+tqdm==4.67.1
+pytest==9.0.3
+matplotlib==3.10.0
+ipython==9.16.1
+ipykernel==7.3.0

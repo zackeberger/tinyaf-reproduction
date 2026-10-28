@@ -1,0 +1,7 @@
+{
+  "datasets": {
+    "SHDB": {"source": "data/shdb-af", "metadata": "data/manifests/SHDB", "patient_metadata": "data/shdb-af/AdditionalData.csv"},
+    "IRIDIA": {"source": "data/iridia-af/records/iridia-af-records-v1.0.1", "metadata": "data/manifests/IRIDIA", "native_fs": 200, "patient_metadata": "data/iridia-af/iridia-af-metadata-v1.0.1.csv"},
+    "CPSC": {"source": "data/cpsc_2021", "metadata": "data/manifests/CPSC"}
+  }
+}

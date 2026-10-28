@@ -1,0 +1,19 @@
+{
+  "threshold": 0.414806822797144,
+  "calibration": "none",
+  "model": "F_RR_STK20_SW100_FLTD_HP_RRFUSE_PL8_MSK_ATRIAL_HIER2_8_6_4_2_2_8_6_6_1_12",
+  "data": "BWH",
+  "val_loss": 0.08057738407599999,
+  "val_auroc": 0.9870504582931099,
+  "val_auprc": 0.9177745142402204,
+  "lr": 0.0003,
+  "l1": 0.0,
+  "l2": 0.0001,
+  "upsample": 0.0,
+  "batch_size": 256,
+  "epochs_max": 100,
+  "patience": 10,
+  "original_training_threshold": 0.5729996562004089,
+  "threshold_target_sensitivity": 0.85,
+  "threshold_selection": "model_assets/tinyaf/threshold_selection.json"
+}

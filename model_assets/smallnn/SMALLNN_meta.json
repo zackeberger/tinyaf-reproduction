@@ -1,0 +1,20 @@
+{
+  "threshold": 0.3922985412771895,
+  "threshold_target_sensitivity": 0.85,
+  "calibration": "none",
+  "model": "FLTD_NC_HP_TINY_CNN",
+  "data": "BWH",
+  "val_loss": 0.08642468628573702,
+  "val_auroc": 0.9859337828919315,
+  "val_auprc": 0.9025000263390156,
+  "lr": 0.001,
+  "l1": 0.0,
+  "l2": 0.0,
+  "upsample": 0.0,
+  "batch_size": 256,
+  "epochs_max": 100,
+  "patience": 10,
+  "original_training_threshold": 0.39216071367263794,
+  "threshold_selection": "model_assets/smallnn/threshold_selection.json",
+  "input_kind": "trace"
+}

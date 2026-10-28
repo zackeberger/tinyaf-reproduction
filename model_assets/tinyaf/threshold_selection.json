@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-15",
+  "split": "BWH-validation",
+  "endpoint": "AFIB OR AFL",
+  "target_sensitivity": 0.85,
+  "criterion": "Highest observed probability threshold with sensitivity >= target; probability >= threshold is positive.",
+  "probability": "scipy.special.expit of saved float32 logits promoted to float64",
+  "deployment": "C uses the float32 representation of each selected threshold; this preserves all validation classifications.",
+  "research_operating_point": {
+    "path": "/home/zberger/tinyaf-research/tinyaf/operating_point.json",
+    "research_commit": "65f2cf6b6bc366da8d149e38e0e04c1d40127145",
+    "sha256": "1fe0fc28d8bf72135a8c33daea617ca711405dcba3ce1141cb558db9ff56b874"
+  },
+  "cache_metadata_update": "On 2026-10-15 research updated cache threshold metadata to the 85% operating point and preserved the old value as training_threshold. cache_sha256 identifies the current file; original_cache_sha256 identifies the file used for selection. Reconstructing each original NPZ from the current logit, y, gi, and training_threshold reproduces its original SHA256 exactly, confirming unchanged scores, labels, and row order.",
+  "models": {
+    "TINYAF-S": {
+      "validation_cache": "/home/zberger/tinyaf-research/logs/d3/npz/models_d3_S_s2.npz",
+      "cache_sha256": "ec8b17f41107732f44534ea2c45c616af68efb0a7db085110005128f6650598e",
+      "original_cache_sha256": "0ef058f04027f19617e5f2ce494a221b0072c39905d23ca695b264bb6430f4e5",
+      "n": 252303,
+      "positives": 25763,
+      "target_sensitivity": 0.85,
+      "threshold": 0.414806822797144,
+      "sensitivity": 0.8500174669099095,
+      "specificity": 0.9833274476913569,
+      "precision": 0.8528976476086618,
+      "tp": 21899,
+      "fn": 3864,
+      "fp": 3777,
+      "tn": 222763
+    },
+    "TINYAF-M": {
+      "validation_cache": "/home/zberger/tinyaf-research/logs/d3/npz/models_d3_M_s42.npz",
+      "cache_sha256": "9876ffdf793b6c609c6cad12faf269778add995871feb73ccbe0485cdbb930b2",
+      "original_cache_sha256": "8578d79c2f19c611e23be84762cc9b32175742f79b300f9a5f45fee926bf30db",
+      "n": 252303,
+      "positives": 25763,
+      "target_sensitivity": 0.85,
+      "threshold": 0.4413809542877673,
+      "sensitivity": 0.8500174669099095,
+      "specificity": 0.9851637679879933,
+      "precision": 0.8669437846397466,
+      "tp": 21899,
+      "fn": 3864,
+      "fp": 3361,
+      "tn": 223179
+    },
+    "TINYAF-L": {
+      "validation_cache": "/home/zberger/tinyaf-research/logs/d3/npz/models_d3_L_s42.npz",
+      "cache_sha256": "b7da9b931d955da2d400cf4e6cf60614ac31c96a4ecdf8b0e881d40b298fa5c5",
+      "original_cache_sha256": "6c6b2a583678ed63afc7c96638f6d0611b522090b3e1c34b21d922d2f1afc278",
+      "n": 252303,
+      "positives": 25763,
+      "target_sensitivity": 0.85,
+      "threshold": 0.48858124410228104,
+      "sensitivity": 0.8500174669099095,
+      "specificity": 0.9881301315440981,
+      "precision": 0.8906377094517651,
+      "tp": 21899,
+      "fn": 3864,
+      "fp": 2689,
+      "tn": 223851
+    }
+  }
+}

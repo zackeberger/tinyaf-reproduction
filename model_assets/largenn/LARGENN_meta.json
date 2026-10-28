@@ -1,0 +1,20 @@
+{
+  "threshold": 0.6911819363466792,
+  "threshold_target_sensitivity": 0.85,
+  "calibration": "none",
+  "model": "FLTD_NC_HP_RS4_RESNET_18_CNN",
+  "data": "BWH",
+  "val_loss": 0.05962654930713226,
+  "val_auroc": 0.9925182249436096,
+  "val_auprc": 0.9525778747284903,
+  "lr": 0.0001,
+  "l1": 0.0,
+  "l2": 0.0001,
+  "upsample": 0.0,
+  "batch_size": 256,
+  "epochs_max": 100,
+  "patience": 10,
+  "original_training_threshold": 0.6911802887916565,
+  "threshold_selection": "model_assets/largenn/threshold_selection.json",
+  "input_kind": "trace"
+}

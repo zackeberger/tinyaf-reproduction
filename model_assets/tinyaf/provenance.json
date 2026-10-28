@@ -1,0 +1,32 @@
+{
+  "research_commit": "b0ae8a56a82a160764d3fe50559bd313334a3187",
+  "sources": {
+    "tinyaf/models/microaf.py": "81e282e0a3b0134c402cf77f4745992ee68f19ec9d3f313a35844e4ea124e9ac",
+    "tinyaf/pipeline.py": "dc1c97e9088cf17db72a70be88cf68aab6c6364a4caa3508878d99b97df17ae5",
+    "tinyaf/preprocess/rpeaks.py": "3895bfd01dc0da64bfb08137044723ec964c2088d6492630a8ef2c162d42951d",
+    "tinyaf/preprocess/detector.py": "9201252119b7b51b79b0a94e4abe218534f59397a91ab129f42d00c628901f1b"
+  },
+  "models": {
+    "TINYAF-S": {
+      "source": "/storage2/zberger/tinyaf/models_d3_S_s2/BWH/F_RR_STK20_SW100_FLTD_HP_RRFUSE_PL8_MSK_ATRIAL_HIER2_8_6_4_2_2_8_6_6_1_12/none/target_hz_100/upsample_0.0/l1_0.0_l2_0.0001_lr_0.0003_batch_256/AFIB_model_F_RR_STK20_SW100_FLTD_HP_RRFUSE_PL8_MSK_ATRIAL_HIER2_8_6_4_2_2_8_6_6_1_12_cal_none_label_BOTH_hz_100_ups_0.0_l1_0.0_l2_0.0001_lr_0.0003_batch_256.pth",
+      "sha256": "2b1393ddbbaed8c27c5af73f902dfaa88338270095e3da4df041b14c23145d51",
+      "threshold": 0.414806822797144
+    },
+    "TINYAF-M": {
+      "source": "/storage2/zberger/tinyaf/models_d3_M_s42/BWH/F_RR_STK20_SW100_FLTD_HP_RRFUSE_PL8_MSK_ATRIAL_HIER2_8_6_4_2_2_16_10_10_1_20/none/target_hz_100/upsample_0.0/l1_0.0_l2_0.0001_lr_0.0003_batch_256/AFIB_model_F_RR_STK20_SW100_FLTD_HP_RRFUSE_PL8_MSK_ATRIAL_HIER2_8_6_4_2_2_16_10_10_1_20_cal_none_label_BOTH_hz_100_ups_0.0_l1_0.0_l2_0.0001_lr_0.0003_batch_256.pth",
+      "sha256": "edf1f13d2388e0e4861a0247ac53e698af628eb640d4feae8ce09467b6cc0464",
+      "threshold": 0.4413809542877673
+    },
+    "TINYAF-L": {
+      "source": "/storage2/zberger/tinyaf/models_d3_L_s42/BWH/F_RR_STK20_SW100_FLTD_HP_RRFUSE_PL8_MSK_ATRIAL_HIER2_8_6_8_2_2_16_16_16_1_32/none/target_hz_100/upsample_0.0/l1_0.0_l2_0.0001_lr_0.0003_batch_256/AFIB_model_F_RR_STK20_SW100_FLTD_HP_RRFUSE_PL8_MSK_ATRIAL_HIER2_8_6_8_2_2_16_16_16_1_32_cal_none_label_BOTH_hz_100_ups_0.0_l1_0.0_l2_0.0001_lr_0.0003_batch_256.pth",
+      "sha256": "b53521465c8a519d8dddc8fca473a4345c4260a723406b8c242b0345d4e51e6d",
+      "threshold": 0.48858124410228104
+    }
+  },
+  "threshold_selection": {
+    "target_sensitivity": 0.85,
+    "split": "BWH-validation",
+    "report": "model_assets/tinyaf/threshold_selection.json",
+    "updated": "2026-10-15"
+  }
+}
