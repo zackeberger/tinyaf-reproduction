@@ -526,8 +526,21 @@ python fig/scripts/model_performance_v_ops.py
 python fig/scripts/external_validation.py
 python fig/scripts/predictive_value.py
 python fig/scripts/patient_burden.py
+python fig/scripts/endpoint-alignment.py
+python fig/scripts/feature_performance_v_ops.py
 ```
 
 The patient burden figure reads saved TinyAF-S Python predictions from
 `logs/evaluation-tinyaf-s-patients/` by default; use `--predictions-dir` to select
 another run.
+
+Additional figures read results from the original Weights & Biases projects.
+Set `WANDB_API_KEY` for an account with access to those projects. Write these
+figures to a separate subdirectory to preserve the external-validation figures
+generated above:
+
+```sh
+python fig/scripts/external_val.py --output-dir fig/outputs/wandb
+python fig/scripts/pareto_frontiers.py --output-dir fig/outputs/wandb
+python fig/scripts/performance_profiles.py --output-dir fig/outputs/wandb
+```
