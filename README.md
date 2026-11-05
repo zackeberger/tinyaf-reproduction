@@ -526,8 +526,23 @@ python fig/scripts/model_performance_v_ops.py
 python fig/scripts/external_validation.py
 python fig/scripts/predictive_value.py
 python fig/scripts/patient_burden.py
+python fig/scripts/endpoint_alignment.py
+python fig/scripts/feature_performance_v_ops.py
 ```
 
 The patient burden figure reads saved TinyAF-S Python predictions from
 `logs/evaluation-tinyaf-s-patients/` by default; use `--predictions-dir` to select
 another run.
+
+The feature-performance figure marks feature sets without supplied results as
+"Not available". Its source values are stored in the plotting script.
+
+Pareto-frontier figures currently use deterministic synthetic points for layout
+review. Every PNG and PDF is watermarked "MOCKUP"; these are not measured
+results or confidence intervals. No W&B account or network access is needed.
+
+```sh
+python fig/scripts/pareto_frontiers.py --output-dir fig/outputs/pareto_mockups
+```
+
+Use `--seed` to choose a different reproducible set of illustrative points.
